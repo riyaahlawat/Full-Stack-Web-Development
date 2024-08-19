@@ -1,0 +1,235 @@
+<!-- 02 / 06 / 2023 -->
+<!-- css styling -->
+<html>
+<head>
+	<title>Introduction to CSS</title>
+	<style type = "text/css">
+		h1{
+			color: red;
+		}
+	</style>
+	<!-- link is for external css -->
+	<link rel = "stylesheet" type = "text/css" href = "style.css">
+	<!-- link is below style, hence link will override style -->
+	<!-- rel is for relaion, href is for giving the path -->
+	<!-- by default h1 ka color hota hai black -->
+	<!-- style tag ko introduce krne ka mtlb mai apne program mei internal css ka use kr rha hu -->
+	<!-- head tag k andr linking kari hai by link tag-->
+</head>
+<!-- <body style = "background: midnightblue;"> -->
+<body style = "background: linear-gradient(45deg, #FFA000, orange);">
+
+	<!-- linear gradient k andr teen properties hai.... pehla hai degree then first color -> second color -->
+	<!-- inspect then body then enter linear-gradient in background -->
+	<!-- css - cascading style sheet -->
+	<!-- wireframe -> styling -->
+	<!-- 
+		three types of css - 
+		internal css
+		inline css
+		external css
+		-->
+
+	<!-- inline css mtlb usi tag k andr style attribute use kr rhe ho -->
+		<h1>Heading 1</h1>
+		<h2 style= "color: blue!important; background: red;">Heading 2</h2>
+		<!-- important is for abnormal behavior of your behaviour-->
+		<!-- agr do ya do se jyada attributes use hore h of style in inline css then better is to create a class or id then introduce the class here and then work-->
+
+		<h2 class = "heading">Heading 2 again</h2>
+		<h3>Heading 3</h3>
+		<h3 class = "heading">Heading 3 again</h3>
+		<h4 class = "heading">Heading 4</h4>
+		<!-- I can use the same class with multiple tags -->
+		<h5 id = "color_orange">Heading 5</h5>
+		<!-- although this is can't dfine it uniquely, hence can be converted to class -->
+		<!-- example of id :-
+		section create (for about the company) -> section_about/ page_about/ about_page/ about_section 
+		taht section is unique for the page
+		sections/divisons aage banana seekhenge -->
+		<h6>Heading 6</h6>
+
+	<!-- a particular id to be used only once at one page -->
+
+	<!-- important is not only for inline css, can be used anywhere, any number of times -->
+
+	<!-- avoid internal css as much as possible -->
+	<!-- external css is good and preferred -->
+	<!-- inline css overrides internal and external css 
+	overriding the styling of this particular tab-->
+
+	<!-- class:- whatsapp group p ek baar zoom link daaldi, all members of the group can access the link, whatsapp gp is class here
+	id:- like college ki id is unique, as an individual ki aap kon the-->
+
+
+	<!-- unordered list -->
+	<!-- list-style stylesheet hai -->
+	<!-- <ul style="list-style: devanagari;"> -->
+	<ul type = "square">
+		<!-- type mei hai circle, square and disk -->
+		<!-- list items -->
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>
+		<!-- disc bulletin is default
+		various types of bulletins pre-installed in my browser -->
+		<!-- right click
+		inspect
+		select <ul> in code shown above
+		below in elements.style
+		add list-style
+		choose the required bulletin -->
+
+	</ul>
+
+	<!-- Ordered list -->
+	<!-- <ol type = 'I'> -->
+	<ol style= "list-style: gurmukhi; background: lightgoldenrodyellow;">
+		<!-- type can be 'A', 'a', 'i', 'I', 1. -->
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+		<li>Item 4</li>
+		<li>Item 5</li>		
+	</ol>
+	<!-- introduction of image as a bulletin -->
+	<!-- default 1. 2. 3. ... hai -->
+
+	<ul style= "list-style: none;">
+		<li><img class = "pin_image_size" src = "pin_picture.png">
+			<!-- download png images w/o backgrounds -->
+		Item 1</li>
+		<li><img class = "pin_image_size" src = "pin_picture.png"> Item 2</li>
+		<li><img class = "pin_image_size" src = "pin_picture.png"> Item 3</li>
+		<li><img class = "pin_image_size" src = "pin_picture.png"> Item 4</li>
+		<li><img class = "pin_image_size" src = "pin_picture.png"> Item 5</li>	
+		<!-- how to add in multiple lines at the same time? - wohi ctrl d wala case, look for common pattern -->
+	</ul>
+	<!-- styling aap ek tag p dete ho, naa ki attribute p -->
+
+	<ul charset= "circle">
+		<!-- charset ul ki attribute nahi hai -->
+		<li>hello</li>
+		<li>mate</li>
+		<li>how</li>
+		<li>are</li>
+		<li>you</li>
+	</ul>
+
+	<ul>
+		<li><img class = "pin_image_size" src = "chris_evans.jpg">hello</li>
+		<li><img class = "pin_image_size" src = "chris_evans.jpg">mate</li>
+		<li><img class = "pin_image_size" src = "chris_evans.jpg">how</li>
+		<li><img class = "pin_image_size" src = "chris_evans.jpg">are</li>
+		<li><img class = "pin_image_size" src = "chris_evans.jpg">you</li>
+
+		<!--  use of ctrl + d -->
+	</ul>
+
+
+
+	<!-- Anchor tag -->
+	<a href = "https://google.com" target = "_blank">Click here</a> to visit <sup>google</sup> official website
+
+	<!-- sup is superscript, sub is subscript -->
+	<!-- href mei jaha hume jaana hai uska path dena hai -->
+	<!-- by using _blank wo new page p khulega...pehle same p hi khul rha tha -->
+	<!-- always use _blank when we go from one website to another website on new tab -->
+	<!-- don't use _blank between multiple pages of your own website -->
+
+	<br>
+	<a href = "https://en.wikipedia.org/wiki/Avengers:_Endgame" target = "_blank">Click here</a> <span>to visit wikipedia of <small>marvel</small> universe</span>
+
+	<!-- jiss website p already click kr chuke hai uska color thoda diff hota hai, jispe visit nahi kiya uske "click here" ka color different hota hai -->
+
+	<!-- to differentiaite between fresh links and already visited links-->
+
+
+	<!-- chemical formulaes -->
+	<ul>
+		<!-- subscript -->
+		<li>H<sub>2</sub>O</li>
+		<!-- superscript -->
+		<li>a<sup>2</sup></li>
+
+		<!-- shorcut :-
+		ctrl + shift + down arrow : for moving a line downwards
+		ctrl + shift + up arrow : for moving the text upwards -->
+
+		<!-- shortcut :-
+		ctrl + tab : to go to the next tab and come back -->
+
+		<!-- alt + tab to open all the opened tabs in laptop and move between tabs  
+		use tab to move between them-->
+
+		<!-- ctrl + r on browser page is to refresh the page -->
+
+		<!-- span ki apni koi properties nahi hoti, its just a tag jise aap kahi bhi use kr skte ho -->
+	</ul>
+
+	<!-- to add video there is video tag -->
+
+	<iframe width="300" height="200" src="https://www.youtube.com/embed/TovKoHSJFmg" title="₹5000 At Majnu-Ka-Tilla Market | Ok Tested" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+	<br>
+	<br>
+	<iframe src="https://www.youtube.com/embed/TovKoHSJFmg" title="₹5000 At Majnu-Ka-Tilla Market | Ok Tested" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style= "height: 300px!important; width: 500px!important"></iframe>
+
+	<br>
+	<br>
+
+	<iframe src = "RE-MID.pdf" style= "height: 300px!important; width: 500px!important"></iframe>
+
+	<h1 style= "color: midnightblue;">iframe ka gif</h1>
+	
+	<br>
+	<!-- inspect se border-radius: 50%;, border: 1px solid #000; height: 200px;, width: 200 px -->
+
+	<iframe src = "chris_evans_gif.gif" style= "border-radius: 50%;
+    border: 1px solid white;
+    height: auto;
+    width: 200px;"></iframe>
+	<!-- can paste link of pdf - jo upr url likha aata h - in the src 
+		%20 in src is for space
+	-->
+
+	<!-- iframe creates a frame, uske src mei jo bhi path denge wo uss hisab se adjust kr lega -->
+
+	<!-- can change the url in src and title as per our wish baaki sb same rhega -->
+
+	<!-- slideshow k liye crowser use krta h, that is a different thing -->
+
+	<!-- can use autoplay for autoplay of videos -->
+
+	<!-- video p right click k baad, copy embed code -->
+
+	<!-- gifs will be used as an image, tph img se honge upload -->
+
+	<!-- gif addition -->
+
+	<br>
+	<br>
+
+	<a href = "https://google.com" target = "_blank"><img src = "chris_evans_gif.gif"></a>
+	<!-- can give image/gif as an achor as well -->
+	<!-- gif is a part of image only -->
+	<!-- to circle use height, width, border-radius: 50%, border: 1px solid #000 in style= "" in img tag 
+		height and width same px for circle-->
+
+	<!-- video ka autoplay, video download krke -->
+	<br>
+	<br>
+	<br>
+	
+	<video style = "height: 250px; width: 300px" controls autoplay>
+		<source src = "video_example.mp4" type = "video/mp4">
+	</video>
+
+	<!-- video tag is only for videos, iframe is for videos, pdf, etc. -->
+
+	<!-- possible video formats - mp4, ogg -->
+
+</body>
+</html>

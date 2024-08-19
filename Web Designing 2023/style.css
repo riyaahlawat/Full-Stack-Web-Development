@@ -1,0 +1,49 @@
+h3{
+	color: orange;
+}
+/*name se pehle dot hai toh class, agr # hai toh id*/
+.heading{
+	color: yellowgreen;
+}
+
+#color_orange{
+	color: orange;
+}
+/*focus on naming, smallercase, meaningful, snake_case or camelCase*/
+/*id should be only for one tag, although no error will be shown, and it will work*/
+/*lekin console p warning show kr dega ki this id is used at multiple places*/
+
+.pin_image_size{
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	/*square image circle ho jayegi*/
+}
+
+/*anchor k by default color bhi change kr skte hai*/
+
+/*setting color of anchor tags*/
+/*anchor link - visited link*/
+
+a:visited{
+	color: yellowgreen;
+}
+
+a:hover{
+	color: saddlebrown;
+}
+
+a:active{
+	color: black;
+}
+
+span{
+	color: yellowgreen;
+}
+
+span:hover{
+	color: midnightblue;
+	cursor: cell;
+}
+
+/*can change to a fancy cursor - again by inspect*/

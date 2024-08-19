@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ladies Products</title>
+  <style>
+    /* Styling for the button and categories list container */
+    #show-categories-btn {
+      margin-bottom: 10px;
+    }
+    #categories-list-container {
+      display: none; /* Hide the list initially */
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 900px; /* Limit the container width to prevent stretching */
+      margin: 0 auto; /* Center the container horizontally */
+    }
+
+    /* Styling for each category item */
+    .category-item {
+      flex: 0 0 calc(33.33% - 10px); /* Each category item takes up one-third of the container width minus margins */
+    }
+  </style>
+</head>
+<body>
+  <!-- Button to toggle the categories list -->
+  <button id="show-categories-btn">Ladies</button>
+
+  <!-- List of categories (initially hidden) -->
+  <div id="categories-list-container">
+    <div class="category-item"><a href="#new-arrivals">New Arrivals</a></div>
+    <div class="category-item"><a href="#view-all">View All</a></div>
+    <div class="category-item"><a href="#clothes">Clothes</a></div>
+    <div class="category-item"><a href="#shop-by-product">Shop by Product</a></div>
+    <div class="category-item"><a href="#sale">Sale</a></div>
+    <div class="category-item"><a href="#view-all-2">View All</a></div>
+    <!-- Add more categories here -->
+  </div>
+
+  <script>
+    // JavaScript to toggle the display of categories list when button is clicked
+    const button = document.getElementById('show-categories-btn');
+    const categoriesList = document.getElementById('categories-list-container');
+
+    button.addEventListener('click', () => {
+      if (categoriesList.style.display === 'none') {
+        categoriesList.style.display = 'flex';
+      } else {
+        categoriesList.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
